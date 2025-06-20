@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+html, body {
+  background-color: black;
+  color: white;
+  font-family: "Playfair Display", serif;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  background-color: white;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a.active::after {
+  content: '';
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+

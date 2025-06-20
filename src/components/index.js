@@ -1,0 +1,8 @@
+export { default as Picture } from './Picture'
+export { default as About } from './About'
+export { default as Navbar } from './Navbar'
+export { default as Experience } from './Experience'
+export { default as Content } from './Content'
+export { default as Contact } from './Contact'
+export { default as Card } from './Card'
+export { default as Footer } from './Footer'
