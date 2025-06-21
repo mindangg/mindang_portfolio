@@ -1,14 +1,13 @@
-import React from 'react'
-import { Navbar, Picture, About, Experience, Content, Contact, Footer } from './components'
+import { Navbar, Picture, About, Project, Content, Contact, Footer } from './components'
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <main className='min-h-screen flex flex-col mx-32 my-30'>
+      <main className='min-h-screen flex flex-col'>
         <Picture />
         <About />
-        <Experience />
+        <Project />
         <Content />
         <Contact />
       </main>
