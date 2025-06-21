@@ -2,9 +2,15 @@ import { useState } from 'react'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState('about')
-
-    // const [showSideNav, setShowSideNav] = useState(true)
     const [showSideNav, setShowSideNav] = useState(false)
+
+    const navLinks = [
+        { id: 'about', label: 'About Me' },
+        { id: 'experience', label: 'Experience' },
+        { id: 'content', label: 'Content' },
+        { id: 'contact', label: 'Contact' },
+        { id: 'resume', label: 'Resume' }
+    ]
 
     return (
         <header className='fixed top-0 left-0 w-full flex justify-between items-center py-3  px-4 md:px-10 xl:px-20 z-2'>
@@ -13,19 +19,45 @@ const Navbar = () => {
                 <p>Hello there it's me</p>
             </div>
 
-            <nav className={showSideNav ? 'sidenav' : 'nav hidden md:flex'}>
-                {showSideNav && <i className="fa-solid fa-xmark text-[18px] text-[rgba(0, 0, 0, 0.9)] absolute top-4 right-4 cursor-pointer transition-transform duration-300 hover:-translate-y-1"
-                                onClick={() => setShowSideNav(false)}></i>}
-                <a href='#about' className={toggle === 'about' ? 'active' : ''} onClick={() => (setToggle('about'))}>About Me</a>
-                <a href='#experience' className={toggle === 'experience' ? 'active' : ''} onClick={() => (setToggle('experience'))}>Experience</a>
-                <a href='#content' className={toggle === 'content' ? 'active' : ''} onClick={() => (setToggle('content'))}>Content</a>
-                <a href='#contact' className={toggle === 'contact' ? 'active' : ''} onClick={() => (setToggle('contact'))} >Contact</a>
-                <a href='#resume' className={toggle === 'resume' ? 'active' : ''} onClick={() => (setToggle('resume'))} >Resume</a>
+            {/* Desktop */}
+            <nav className='nav hidden md:flex'>
+                {navLinks.map(link => (
+                    <a
+                        key={link.id}
+                        href={`#${link.id}`}
+                        className={toggle === link.id ? 'active' : ''}
+                        onClick={() => setToggle(link.id)}
+                    >{link.label}</a>
+                ))}
             </nav>
 
-            <span className='md:hidden'>
-                <i className="fa-solid fa-bars cursor-pointer transition-transform duration-300 hover:-translate-y-[5px]"
-                    onClick={() => setShowSideNav(true)}></i>
+            {/* Mobile */}
+            <nav className={`sidenav ${showSideNav ? 'open' : ''} flex md:hidden`}>
+                {navLinks.map(link => (
+                    <a
+                        key={link.id}
+                        href={`#${link.id}`}
+                        className={toggle === link.id ? 'active' : ''}
+                        onClick={() => setToggle(link.id)}
+                    >{link.label}</a>
+                ))}
+            </nav>
+
+            {showSideNav && (
+            <div
+                className='fixed top-0 left-0 w-full h-full bg-black/30 backdrop-blur-sm z-40 md:hidden'
+                onClick={() => setShowSideNav(false)}
+            />
+            )}
+
+            <span className='md:hidden z-50'>
+                {showSideNav ? (
+                    <i className="fa-solid fa-xmark cursor-pointer transition-transform duration-300 hover:-translate-y-1"
+                        onClick={() => setShowSideNav(false)}></i>
+                ) : (
+                    <i className="fa-solid fa-bars cursor-pointer transition-transform duration-300 hover:-translate-y-1"
+                        onClick={() => setShowSideNav(true)}></i>
+                )}
             </span>
         </header>
     )
