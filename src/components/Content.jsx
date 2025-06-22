@@ -2,7 +2,7 @@ import TiktokEmbed from './TiktokEmbed'
 
 const Content = () => {
     return (
-        <section className='relative top-80 mx-auto' id='content'>
+        <section className='flex flex-col justify-center items-center relative top-80 mx-auto' id='content'>
             <div className='w-[95%] max-w-[750px]'>
                 <h1 className='text-3xl text-center font-semibold mb-10'>Content Creation</h1>
                 <div className='flex flex-col md:flex-row flex-wrap gap-5'>
@@ -13,7 +13,7 @@ const Content = () => {
             </div>  
 
             <div>
-                <h1 className='text-3xl text-center font-semibold mt-10'>Follow Me !</h1>
+                <h1 className='text-3xl text-center font-semibold mt-10 mb-5'>Follow Me !</h1>
                 <div className='flex justify-center'>
                     <div className='flex flex-col items-center gap-4'>
                         <h1 className='text-2xl font-semibold'>TikTok</h1>

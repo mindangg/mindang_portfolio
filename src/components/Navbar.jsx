@@ -13,7 +13,7 @@ const Navbar = () => {
     ]
 
     return (
-        <header className='fixed top-0 left-0 w-full flex justify-between items-center py-3  px-4 md:px-10 xl:px-20 z-2'>
+        <header className='fixed top-0 left-0 w-full flex justify-between items-center py-3 px-5 md:px-10 xl:px-20 z-2'>
             <div>
                 <h1 className='text-2xl font-bold'>_.mindang</h1>
                 <p>Hello there it's me</p>
@@ -50,7 +50,7 @@ const Navbar = () => {
             />
             )}
 
-            <span className='md:hidden z-50'>
+            <span className='md:hidden z-50 text-lg'>
                 {showSideNav ? (
                     <i className="fa-solid fa-xmark cursor-pointer transition-transform duration-300 hover:-translate-y-1"
                         onClick={() => setShowSideNav(false)}></i>

@@ -10,23 +10,23 @@ const Contact = () => {
                 <a href='mailto:minhdang875425@gmail.com' target='_blank'>mindang875425@gmail.com</a>
                 <div className='flex justify-center gap-5 text-2xl'>
                     <a href='https://github.com/mindangg' target='_blank' 
-                        className='bg-black w-10 h-10 flex items-center justify-center rounded-full'>
+                        className='bg-black w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-300 hover:-translate-y-1'>
                         <i className="fa-brands fa-github text-white"></i>
                     </a>
                     <a href='https://www.instagram.com/_.mindang/' target='_blank' 
-                        className='bg-pink-500 w-10 h-10 flex items-center justify-center rounded-full'>
+                        className='bg-pink-500 w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-300 hover:-translate-y-1'>
                         <i className="fa-brands fa-instagram"></i>
                     </a>
                     <a href='https://www.tiktok.com/@_.mindangg' target='_blank' 
-                        className='bg-black w-10 h-10 flex items-center justify-center rounded-full'>
+                        className='bg-black w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-300 hover:-translate-y-1'>
                         <i className="fa-brands fa-tiktok text-white"></i>
                     </a>
                     <a href='https://www.facebook.com/minhdangg19/' target='_blank' 
-                        className='bg-[#1877F2] w-10 h-10 flex items-center justify-center rounded-full'>
+                        className='bg-[#1877F2] w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-300 hover:-translate-y-1'>
                         <i className="fa-brands fa-facebook-f text-white"></i>
                     </a>
                     <a href='mailto:minhdang875425@gmail.com' target='_blank' 
-                        className='bg-[#f04434] w-10 h-10 flex items-center justify-center rounded-full'>
+                        className='bg-[#f04434] w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-300 hover:-translate-y-1'>
                         <i className="fa-solid fa-envelope"></i>
                     </a>
                 </div>
