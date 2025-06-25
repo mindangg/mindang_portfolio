@@ -2,8 +2,8 @@ import TiktokEmbed from './TiktokEmbed'
 
 const Content = () => {
     return (
-        <section className='flex flex-col justify-center items-center relative top-80 mx-auto' id='content'>
-            <div className='w-[95%] max-w-[750px]'>
+        <section className='w-full relative top-80' id='content'>
+            <div className='w-[95%] max-w-[750px] flex flex-col justify-center items-center mx-auto'>
                 <h1 className='text-3xl text-center font-semibold mb-10'>Content Creation</h1>
                 <div className='flex flex-col md:flex-row flex-wrap gap-5'>
                     <TiktokEmbed videoId={'7485610149114154258'}/>

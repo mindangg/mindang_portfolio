@@ -4,8 +4,8 @@ import sgu from '../assets/SGU STORE.png'
 
 const Project = () => {
     return (
-        <section className='flex justify-center relative top-60 mx-auto' id='project'>
-            <div className='w-[95%] max-w-[750px] h-auto flex flex-col items-center justify-center gap-8'>
+        <section className='w-full relative top-60' id='project'>
+            <div className='w-[95%] max-w-[750px] h-auto flex flex-col items-center justify-center mx-auto gap-8'>
                 <h1 className='text-3xl font-semibold text-center'>Project</h1>
 
                 <div className='flex flex-col md:flex-row w-full rounded-2xl bg-[#e0dcdc] hover:bg-white transition-all duration-200 hover:scale-101 md:hover:scale-103 cursor-pointer
@@ -47,7 +47,7 @@ const Project = () => {
 
                     <div className='w-full md:w-2/3 text-black p-5 rounded-lg flex flex-col justify-between'>
                         <div className='mb-5 md:mt-0'>
-                            <h1 className='text-2xl font-bold mb-3'>Health Shark</h1>
+                            <h1 className='text-2xl font-bold mb-3'>Health Shark (Hackathon)</h1>
                             <p className='text-md md:text-[15px]'>Developed an AI Chatbot to treat emotional disorders with animated UI for better experience and store user responses for a more personalize experience</p>
                         </div>
 

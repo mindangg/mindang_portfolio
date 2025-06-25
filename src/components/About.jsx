@@ -1,9 +1,9 @@
 const About = () => {
     return (
-        <section className='flex justify-center relative top-35 mx-auto' id='about'>
-            <div className='w-[95%] max-w-[750px] text-center flex flex-col items-center gap-3 rounded-2xl border border-white/45 p-10 backdrop-blur-md bg-white/20'>
+        <section className='w-full relative top-35' id='about'>
+            <div className='w-[95%] max-w-[750px] text-center flex flex-col justify-center items-center mx-auto gap-3 rounded-2xl border border-white/45 p-10 backdrop-blur-md bg-white/20'>
                 <div className='absolute top-10 left-5 w-32 h-32 md:bg-white/30 rounded-full blur-xl'></div>
-                <h2 className='text-[27px] md:text-3xl font-semibold'>About Me</h2>
+                <h1 className='text-3xl font-semibold'>About Me</h1>
 
                 <p className='text-sm md:text-base lg:text-lg'>I love creating content that helps people, inspires or makes them laugh.</p>
                 <p className='text-sm md:text-base lg:text-lg'>As for my technical side, I like to build stuff that are useful to people. I want to solve problems, make peoples 

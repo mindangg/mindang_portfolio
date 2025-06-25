@@ -8,8 +8,7 @@ const Navbar = () => {
         { id: 'about', label: 'About Me' },
         { id: 'project', label: 'Project' },
         { id: 'content', label: 'Content' },
-        { id: 'contact', label: 'Contact' },
-        { id: 'resume', label: 'Resume' }
+        { id: 'contact', label: 'Contact' }
     ]
 
     return (
@@ -29,6 +28,13 @@ const Navbar = () => {
                         onClick={() => setToggle(link.id)}
                     >{link.label}</a>
                 ))}
+                <a 
+                    href='https://drive.google.com/file/d/14K3pn5S1BsmMfQ1XvdNVeaV-B_-ONEX-/view?usp=sharing'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className={toggle === 'resume' ? 'active' : ''}
+                    onClick={() => setToggle('resume')}
+                >Resume</a>
             </nav>
 
             {/* Mobile */}
@@ -41,6 +47,13 @@ const Navbar = () => {
                         onClick={() => setToggle(link.id)}
                     >{link.label}</a>
                 ))}
+                <a 
+                    href='https://drive.google.com/file/d/14K3pn5S1BsmMfQ1XvdNVeaV-B_-ONEX-/view?usp=sharing'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className={toggle === 'resume' ? 'active' : ''}
+                    onClick={() => setToggle('resume')}
+                >Resume</a>
             </nav>
 
             {showSideNav && (

@@ -1,4 +1,4 @@
-import { Navbar, Picture, About, Project, Content, Contact, Footer } from './components'
+import { Navbar, Picture, About, Achievement, Project, Content, Contact, Footer } from './components'
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <main className='min-h-screen flex flex-col'>
         <Picture />
         <About />
+        <Achievement />
         <Project />
         <Content />
         <Contact />
