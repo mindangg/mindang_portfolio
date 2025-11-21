@@ -6,9 +6,9 @@ const Content = () => {
             <div className='w-[95%] max-w-[750px] flex flex-col justify-center items-center mx-auto'>
                 <h1 className='text-3xl text-center font-semibold mb-10'>Content Creation</h1>
                 <div className='flex flex-col md:flex-row flex-wrap gap-5'>
-                    <TiktokEmbed videoId={'7485610149114154258'}/>
                     <TiktokEmbed videoId={'7513826299220184326'}/>
-                    <TiktokEmbed videoId={'7474501382209277191'}/>
+                    <TiktokEmbed videoId={'7555371400589069576'}/>
+                    <TiktokEmbed videoId={'7567981566786391303'}/>
                 </div>
             </div>  
 

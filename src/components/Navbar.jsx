@@ -29,7 +29,7 @@ const Navbar = () => {
                     >{link.label}</a>
                 ))}
                 <a 
-                    href='https://drive.google.com/file/d/14K3pn5S1BsmMfQ1XvdNVeaV-B_-ONEX-/view?usp=sharing'
+                    href='https://drive.google.com/file/d/17aVndwJ0dlslVWpFWoYFByBvHqy_z-Ej/view?usp=sharing'
                     target='_blank'
                     rel='noopener noreferrer'
                     className={toggle === 'resume' ? 'active' : ''}
