@@ -9,7 +9,7 @@ const App = () => {
         <About />
         <Achievement />
         <Project />
-        <Content />
+        {/*<Content />*/}
         <Contact />
       </main>
       <Footer />

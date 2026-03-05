@@ -1,12 +1,10 @@
-const About = () => {
+const ProjectCard = () => {
     return (
         <section className='w-full relative top-35' id='about'>
             <div className='w-[95%] max-w-[750px] text-center flex flex-col justify-center items-center mx-auto gap-3 rounded-2xl border border-white/45 p-10 backdrop-blur-md bg-white/20'>
                 <div className='absolute top-10 left-5 w-32 h-32 md:bg-white/30 rounded-full blur-xl'></div>
                 <h1 className='text-3xl font-semibold'>About Me</h1>
 
-                <p className='text-sm md:text-base lg:text-lg'>I am a third year Software Engineering student at Sai Gon University with a strong foundation in Java, JavaScript,
-                    and AI.</p>
                 <p className='text-sm md:text-base lg:text-lg'>I am passionate about building stuff that are useful to people. I want to solve problems, make peoples
                     lives easier and if my actions help to inspires others in the process, that would be my dream.
                 </p>
@@ -19,4 +17,4 @@ const About = () => {
     )
 }
 
-export default About
+export default ProjectCard
