@@ -1,8 +1,0 @@
-export { default as Picture } from './Picture'
-export { default as About } from './About'
-export { default as Achievement } from './Achievement'
-export { default as Navbar } from './Navbar'
-export { default as Project } from './Project'
-export { default as Content } from './Content'
-export { default as Contact } from './Contact'
-export { default as Footer } from './Footer'
