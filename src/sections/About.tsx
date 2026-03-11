@@ -1,5 +1,4 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import portrait from '../assets/IMG_3618.JPG'
 
 // const STATS = [
 //   { value: '7+', label: 'Years Experience' },
@@ -21,8 +20,8 @@ export default function About() {
               {/* Main image block */}
               <div className="aspect-[3/4] bg-ink rounded-none overflow-hidden relative">
                 <img
-                  src={portrait}
-                  alt="Portrait"
+                  src="/IMG_3618.jpg"
+                  alt="portrait"
                   className="absolute inset-0 w-full h-full object-cover object-top"
                 />
                 {/* Subtle gold overlay for cohesion */}

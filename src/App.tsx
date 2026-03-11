@@ -6,7 +6,7 @@ import About from './sections/About'
 import Work from './sections/Work'
 import Skills from './sections/Skills'
 import Achievements from './sections/Achievements'
-import Experience from './sections/Experience'
+// import Experience from './sections/Experience'
 import Contact from './sections/Contact'
 
 function App() {
