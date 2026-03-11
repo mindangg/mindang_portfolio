@@ -26,9 +26,9 @@ export default function Hero() {
       {/* Background texture */}
       <div className="absolute inset-0 bg-noise opacity-60 pointer-events-none" />
 
-      {/* Decorative circle */}
-      <div className="absolute top-24 right-8 md:right-24 w-64 h-64 md:w-96 md:h-96 rounded-full border border-gold/20 animate-spin-slow pointer-events-none" />
-      <div className="absolute top-32 right-16 md:right-32 w-48 h-48 md:w-72 md:h-72 rounded-full border border-gold/10 animate-spin-slow pointer-events-none" style={{ animationDirection: 'reverse', animationDuration: '12s' }} />
+      {/*/!* Decorative circle *!/*/}
+      {/*<div className="absolute top-24 right-8 md:right-24 w-64 h-64 md:w-96 md:h-96 rounded-full border border-gold/20 animate-spin-slow pointer-events-none" />*/}
+      {/*<div className="absolute top-32 right-16 md:right-32 w-48 h-48 md:w-72 md:h-72 rounded-full border border-gold/10 animate-spin-slow pointer-events-none" style={{ animationDirection: 'reverse', animationDuration: '12s' }} />*/}
 
       {/* Floating label */}
       <div className="absolute top-28 right-8 md:right-28 w-28 h-28 md:w-40 md:h-40 flex items-center justify-center animate-float pointer-events-none">

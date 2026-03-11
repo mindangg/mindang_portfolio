@@ -20,7 +20,7 @@ export default function About() {
               {/* Main image block */}
               <div className="aspect-[3/4] bg-ink rounded-none overflow-hidden relative">
                 <img
-                  src="/IMG_3618.jpg"
+                  src="/mindang_portfolio/IMG_3618.jpg"
                   alt="portrait"
                   className="absolute inset-0 w-full h-full object-cover object-top"
                 />
