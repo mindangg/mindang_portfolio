@@ -78,7 +78,7 @@ export default function About() {
 
             {/* CV download */}
             <div className="animate-on-scroll mt-10" style={{ transitionDelay: '0.4s' }}>
-              <a href="https://drive.google.com/file/d/1ED1UWJTux4Wl-DxH4O1GPFOQV3APIZTe/view?usp=sharing" target='_blank' className="btn-outline">
+              <a href="https://drive.google.com/file/d/1uYL8TazyLz1f8dEchZxmFHMmbCjAqQpT/view?usp=sharing" target='_blank' className="btn-outline">
                 See my CV
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="ml-1">
                   <path d="M7 1v9M3 7l4 4 4-4M1 12h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
