@@ -20,17 +20,19 @@ export const PROJECTS: Project[] = [
     year: '2025',
     featured: true,
     color: '#1a1a0f',
+    link: 'https://github.com/qbael/HealthPro'
   },
   {
   id: 2,
     title: 'Manga E-Commerce Platform',
-    category: 'Machine Learning',
+    category: 'FullStack',
     description:
       'Developed a Full-stack E-Commerce Web Application to sells manga with an admin dashboard for managing the website and JWT for authentication',
     tags: ['React.js', 'Express.js', 'Node.js', 'MongoDB', 'JavaScript'],
     year: '2025',
     featured: true,
     color: '#2a3a1a',
+    link: 'https://github.com/mindangg/Manga-2.0'
   },
   {
     id: 3,
@@ -41,16 +43,18 @@ export const PROJECTS: Project[] = [
     tags: ['React', 'RAG', 'Python', 'FastAPI', 'Ollama LLM'],
     year: '2026',
     color: '#1a1a3a',
+    link: 'https://github.com/mindangg/AskRepo'
   },
   {
     id: 4,
-    title: 'HealthShark — Mobile App',
-    category: 'Mobile Development',
+    title: 'HealthShark',
+    category: 'Machine Learning',
     description:
       'Developed an AI Chatbot to treat emotional disorders with animated UI for better experience and store user responses for a more personalize experience',
     tags: ['MERN stack', 'Python', 'FastAPI'],
     year: '2023',
     color: '#3a1a2a',
+    link: 'https://github.com/mindangg/Hackathon'
   },
 ]
 
@@ -59,11 +63,13 @@ export const SKILLS: Skill[] = [
   { name: 'React / Next.js', level: 95, category: 'Frontend' },
   { name: 'TypeScript', level: 90, category: 'Frontend' },
   { name: 'Tailwind CSS', level: 92, category: 'Frontend' },
+  { name: 'React Native / Expo', level: 92, category: 'Frontend' },
 
   // Backend
   { name: 'Java / Spring Boot', level: 85, category: 'Backend' },
   { name: 'Node.js / Express', level: 85, category: 'Backend' },
   { name: 'PostgreSQL / Prisma', level: 80, category: 'Backend' },
+  { name: 'Python / FastAPI', level: 80, category: 'Backend' },
 
   // Design
   { name: 'Docker', level: 72, category: 'FullStack' },

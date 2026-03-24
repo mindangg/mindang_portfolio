@@ -17,6 +17,7 @@ export interface Project {
   year: string
   featured?: boolean
   color: string
+  link: string
 }
 
 export interface Skill {

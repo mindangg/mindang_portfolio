@@ -36,7 +36,8 @@ function ProjectCard({ project, index }: { project: (typeof PROJECTS)[0]; index:
   const [hovered, setHovered] = useState(false)
 
   return (
-    <div
+    <a
+      href={project.link} target='_blank'
       className="animate-on-scroll group"
       style={{ transitionDelay: `${index * 0.08}s` }}
       onMouseEnter={() => setHovered(true)}
@@ -98,6 +99,6 @@ function ProjectCard({ project, index }: { project: (typeof PROJECTS)[0]; index:
           </div>
         </div>
       </div>
-    </div>
+    </a>
   )
 }
