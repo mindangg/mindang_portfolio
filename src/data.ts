@@ -2,20 +2,31 @@ import type { Project, Skill, Experience, NavItem, Achievement } from './types'
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Work', href: '#work' },
   { label: 'Skills', href: '#skills' },
   { label: 'Achievements', href: '#achievements' },
-  // { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ]
 
 export const PROJECTS: Project[] = [
   {
+    id: 5,
+    title: 'Instory',
+    category: 'FullStack',
+    description:
+      'Built real-time chat with SignalR, integrated AWS S3 for media upload, and deployed on AWS (EC2, RDS, S3, ECR) using GitHub Actions CI/CD & Docker.',
+    tags: ['.NET 10', 'AWS', 'PostgreSQL', 'Docker', 'React'],
+    year: '2026',
+    color: '#1a2a2a',
+    link: 'https://github.com/qbael/Instory'
+  },
+  {
     id: 1,
     title: 'HealthPro',
     category: 'FullStack',
     description:
-      'Developed a full-stack Patient Management System with a microservices architecture, featuring secure authentication and an intuitive dashboard for managing patient records and healthcare workflows.',
+      'Built a Patient Management System across 3 independent Spring Boot microservices, each with its own database, and an API gateway with centralized JWT authentication and RBAC.',
     tags: ['Next.js', 'SpringBoot', 'PostgreSQL', 'TypeScript', 'Java'],
     year: '2025',
     featured: true,
@@ -23,7 +34,7 @@ export const PROJECTS: Project[] = [
     link: 'https://github.com/qbael/HealthPro'
   },
   {
-  id: 2,
+    id: 2,
     title: 'Manga E-Commerce Platform',
     category: 'FullStack',
     description:
@@ -39,7 +50,7 @@ export const PROJECTS: Project[] = [
     title: 'AskRepo',
     category: 'RAG system',
     description:
-      'A full-stack GitHub Repository RAG System with ia local AI architecture, featuring hybrid semantic search and an intelligent chat interface for querying any codebase with exact file and line citations.',
+      'Built a GitHub Repository RAG System with local AI, hybrid semantic search, and intelligent chat for querying codebases with exact file and line citations.',
     tags: ['React', 'RAG', 'Python', 'FastAPI', 'Ollama LLM'],
     year: '2026',
     color: '#1a1a3a',
@@ -59,53 +70,52 @@ export const PROJECTS: Project[] = [
 ]
 
 export const SKILLS: Skill[] = [
-  // Frontend
-  { name: 'React / Next.js', level: 95, category: 'Frontend' },
-  { name: 'TypeScript', level: 90, category: 'Frontend' },
-  { name: 'Tailwind CSS', level: 92, category: 'Frontend' },
-  { name: 'React Native / Expo', level: 92, category: 'Frontend' },
+  // Languages
+  { name: 'Java', level: 90, category: 'Languages' },
+  { name: 'C#', level: 85, category: 'Languages' },
+  { name: 'TypeScript', level: 90, category: 'Languages' },
+  { name: 'Python', level: 80, category: 'Languages' },
 
-  // Backend
-  { name: 'Java / Spring Boot', level: 85, category: 'Backend' },
-  { name: 'Node.js / Express', level: 85, category: 'Backend' },
-  { name: 'PostgreSQL / Prisma', level: 80, category: 'Backend' },
-  { name: 'Python / FastAPI', level: 80, category: 'Backend' },
+  // Frameworks
+  { name: 'Spring Boot', level: 90, category: 'Frameworks' },
+  { name: '.NET', level: 85, category: 'Frameworks' },
+  { name: 'Next.js', level: 95, category: 'Frameworks' },
+  { name: 'Express.js', level: 85, category: 'Frameworks' },
+  { name: 'FastAPI', level: 80, category: 'Frameworks' },
 
-  // Design
-  { name: 'Docker', level: 72, category: 'FullStack' },
-  { name: 'AWS', level: 100, category: 'FullStack' },
-  { name: 'Github Actions', level: 100, category: 'FullStack' },
+  // Cloud & DevOps
+  { name: 'AWS', level: 100, category: 'Cloud & DevOps' },
+  { name: 'Docker', level: 72, category: 'Cloud & DevOps' },
+  { name: 'Git', level: 95, category: 'Cloud & DevOps' },
+  { name: 'GitHub Actions', level: 100, category: 'Cloud & DevOps' },
+
+  // Databases
+  { name: 'PostgreSQL', level: 80, category: 'Databases' },
+  { name: 'MySQL', level: 75, category: 'Databases' },
+  { name: 'MongoDB', level: 75, category: 'Databases' },
 ]
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: 'Nexus Studio',
-    role: 'Senior Creative Developer',
-    period: '2023 — Present',
-    description:
-      'Leading frontend architecture and design system development for enterprise clients. Mentoring a team of 6 developers and collaborating closely with UX/product teams.',
+    company: 'Glowmax',
+    role: 'Co-Founder | CTO (Pre-launch)',
+    period: 'May 2026 — Present',
     current: true,
+    link: 'https://glowmaxx-three.vercel.app',
+    highlights: [
+      'Co-founded Glowmax as CTO, owning technical strategy, product architecture, and execution from concept to launch.',
+      'Delivered core platform features - AI-powered facial analysis, premium user flows, leaderboard, and engagement systems to drive retention.',
+      'Built and operated production infrastructure on AWS with automated CI/CD, supporting secure media workflows, reliable deployment, and fast iteration.',
+    ],
   },
   {
-    company: 'Forma Digital',
-    role: 'Full-Stack Developer',
-    period: '2021 — 2023',
-    description:
-      'Built scalable web applications from concept to production. Owned end-to-end delivery for 3 major product launches, each reaching 10k+ users within 30 days.',
-  },
-  {
-    company: 'Pixel & Ink Agency',
-    role: 'UI Developer & Designer',
-    period: '2019 — 2021',
-    description:
-      'Bridging the gap between design and engineering — translating Figma mockups into pixel-perfect, accessible, performant interfaces for clients across 8 industries.',
-  },
-  {
-    company: 'Freelance',
-    role: 'Independent Developer',
-    period: '2017 — 2019',
-    description:
-      'Designed and built websites, brand identities, and web apps for 30+ small businesses and startups across Southeast Asia.',
+    company: 'EVNHCMC IT',
+    role: 'Backend Developer',
+    period: 'June 2026 — Sep 2026',
+    incoming: true,
+    highlights: [
+      'Incoming Backend Developer Intern, leveraging Java and Spring Boot to develop and maintain backend services.',
+    ],
   },
 ]
 

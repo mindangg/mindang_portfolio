@@ -38,13 +38,13 @@ function ProjectCard({ project, index }: { project: (typeof PROJECTS)[0]; index:
   return (
     <a
       href={project.link} target='_blank'
-      className="animate-on-scroll group"
+      className="animate-on-scroll group block h-full"
       style={{ transitionDelay: `${index * 0.08}s` }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className={`relative overflow-hidden border border-cream/5 transition-all duration-500 ${
+        className={`relative overflow-hidden border border-cream/5 transition-all duration-500 h-full ${
           project.featured ? 'md:col-span-2' : ''
         }`}
         style={{ backgroundColor: project.color }}
@@ -59,44 +59,47 @@ function ProjectCard({ project, index }: { project: (typeof PROJECTS)[0]; index:
         />
 
         {/* Content */}
-        <div className="relative p-8 min-h-72 flex flex-col justify-between">
+        <div className="relative p-5 h-full flex flex-col">
           {/* Top */}
           <div className="flex items-start justify-between">
             <span className="font-mono text-xs text-cream/30 tracking-widest uppercase">
               {project.category}
             </span>
             <div
-              className={`w-10 h-10 border border-cream/20 flex items-center justify-center transition-all duration-300 ${
+              className={`w-9 h-9 border border-cream/20 flex items-center justify-center transition-all duration-300 ${
                 hovered ? 'bg-gold border-gold' : ''
               }`}
             >
               <ArrowUpRight
-                size={16}
+                size={15}
                 className={`transition-colors duration-300 ${hovered ? 'text-ink' : 'text-cream/40'}`}
               />
             </div>
           </div>
 
-          {/* Title */}
-          <div>
-            <div className="font-mono text-xs text-gold/60 mb-3">{project.year}</div>
-            <h3 className="font-display text-2xl font-bold text-cream mb-3 leading-tight">
+          {/* Title, description & tags — grouped tightly */}
+          <div className="mt-3">
+            <div className="font-mono text-xs text-gold/60 mb-1.5">{project.year}</div>
+            <h3 className="font-display text-xl font-bold text-cream mb-1.5 leading-tight">
               {project.title}
             </h3>
-            <p className="font-body text-sm text-cream/50 leading-relaxed mb-6">
+            <p className="font-body text-sm text-cream/50 leading-snug">
               {project.description}
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5 mt-3">
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="font-mono text-xs text-cream/30 border border-cream/10 px-2 py-1"
+                  className="font-mono text-xs text-cream/30 border border-cream/10 px-2 py-0.5"
                 >
                   {tag}
                 </span>
               ))}
             </div>
           </div>
+
+          {/* Absorbs extra height so gap stays below tags, not between content */}
+          <div className="flex-1 min-h-0" aria-hidden />
         </div>
       </div>
     </a>

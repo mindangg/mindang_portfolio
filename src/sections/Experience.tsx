@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { EXPERIENCES } from '../data'
 
@@ -47,14 +48,33 @@ export default function Experience() {
                             Current
                           </span>
                         )}
+                        {exp.incoming && (
+                          <span className="font-mono text-xs bg-accent text-cream px-2 py-0.5 tracking-widest uppercase">
+                            Incoming
+                          </span>
+                        )}
                       </div>
-                      <div className="font-body text-gold font-medium">{exp.company}</div>
+                      {exp.link ? (
+                        <a
+                          href={exp.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-body text-lg text-gold font-medium inline-flex items-center gap-1.5 hover:underline"
+                        >
+                          {exp.company}
+                          <ArrowUpRight size={16} className="text-gold/60" />
+                        </a>
+                      ) : (
+                        <div className="font-body text-lg text-gold font-medium">{exp.company}</div>
+                      )}
                     </div>
                     <span className="font-mono text-sm text-ink/40 whitespace-nowrap">{exp.period}</span>
                   </div>
-                  <p className="font-body text-ink/60 text-lg leading-relaxed max-w-2xl">
-                    {exp.description}
-                  </p>
+                  <ul className="font-body text-ink/60 text-lg leading-relaxed max-w-2xl space-y-2 list-disc pl-5">
+                    {exp.highlights.map((highlight) => (
+                      <li key={highlight}>{highlight}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}

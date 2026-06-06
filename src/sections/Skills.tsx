@@ -1,11 +1,7 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { SKILLS } from '../data'
 
-const CATEGORIES = ['Frontend', 'Backend', 'FullStack']
-
-const TOOLS = [
-  'AWS', 'Docker', 'Git', 'Postman', 'GitHub Actions', 'Prisma'
-]
+const CATEGORIES = ['Languages', 'Frameworks', 'Cloud & DevOps', 'Databases']
 
 export default function Skills() {
   const ref = useScrollAnimation()
@@ -24,7 +20,7 @@ export default function Skills() {
         </div>
 
         {/* Skill bars by category */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
           {CATEGORIES.map((cat, ci) => (
             <div
               key={cat}
@@ -42,32 +38,12 @@ export default function Skills() {
                       <span className="font-body text-sm font-medium text-ink">{skill.name}</span>
                       {/*<span className="font-mono text-xs text-gold">{skill.level}%</span>*/}
                     </div>
-                    <div className="h-px bg-ink/10 relative overflow-hidden">
-                      <div
-                        className="absolute top-0 left-0 h-full bg-gradient-to-r from-gold to-gold/60 transition-all duration-1000 ease-out"
-                        style={{ width: `100%` }}
-                      />
-                    </div>
+                    <div className="h-px bg-ink/15" />
                   </div>
                 ))}
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Tools ticker */}
-        <div className="animate-on-scroll border-t border-ink/10 pt-12">
-          <div className="text-label mb-6 block">Tools & Software</div>
-          <div className="flex flex-wrap gap-3">
-            {TOOLS.map((tool) => (
-              <span
-                key={tool}
-                className="font-mono text-xs border border-ink/15 text-ink/50 px-4 py-2 hover:border-gold hover:text-gold transition-all duration-200"
-              >
-                {tool}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>
